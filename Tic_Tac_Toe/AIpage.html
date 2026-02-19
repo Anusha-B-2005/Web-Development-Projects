@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Game.png" type="image/png">
+    <style>
+        .home {
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            border: 1px solid white;
+        }
+    </style>
+</head>
+<body>
+    <br><br>
+    <h1>Tic Tac Toe!</h1>
+    <br>
+    <div class="board">
+        <div class="cell" onclick="handleClick(0)"></div>
+        <div class="cell" onclick="handleClick(1)"></div>
+        <div class="cell" onclick="handleClick(2)"></div>
+        <div class="cell" onclick="handleClick(3)"></div>
+        <div class="cell" onclick="handleClick(4)"></div>
+        <div class="cell" onclick="handleClick(5)"></div>
+        <div class="cell" onclick="handleClick(6)"></div>
+        <div class="cell" onclick="handleClick(7)"></div>
+        <div class="cell" onclick="handleClick(8)"></div>
+    </div>
+    <br>
+    <h2 id="status"></h2>
+    <button class="btntry" onclick="resetGame()">Restart Game</button>
+    <button class="home" onclick="window.location.href='Index.html';">Home</button>
+    <script src="AIscript.js"></script>
+</body>
+</html>
